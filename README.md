@@ -39,6 +39,7 @@ cat /etc/passwd
 
 ### Listar apenas os nomes dos usuários
 ```bash
+groups
 cut -d: -f1 /etc/passwd
 ```
 
