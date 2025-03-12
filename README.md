@@ -188,6 +188,7 @@ kill -9 1234
 ```bash
 sudo reboot
 ```
+OBS. Alguns comandos não são possíveis de executar na VPS com os usuários dos alunos, pois estes usuários não fazem parte do grupo root.
 
 ### Desligar o sistema
 ```bash
