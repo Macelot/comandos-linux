@@ -298,6 +298,12 @@ chmod o=r arquivo.txt
 - `g-w`: Remove permissão de escrita para o grupo.
 - `o=r`: Define permissão de leitura para outros, removendo todas as outras permissões.
 
+#### Consultar versão do SO Debian
+
+```bash
+cat /etc/os-release
+```
+
 ---
 
 ## Conclusão
