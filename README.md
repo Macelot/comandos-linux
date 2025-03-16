@@ -311,3 +311,51 @@ cat /etc/os-release
 O `chmod` é uma ferramenta poderosa para gerenciar permissões de arquivos e diretórios no Linux. Usando valores numéricos ou letras, você pode controlar quem pode ler, escrever ou executar seus arquivos. A tabela de permissões e exemplos demonstrados aqui são fundamentais para uma boa administração do sistema Linux.
 
 
+
+### Comando para verificar a data de criação da VM:
+```bash
+stat / | grep Birth
+```
+
+### Criação de Banner para SSH
+O arquivo onde o banner é definido é /etc/ssh/sshd_config.
+
+## 1️⃣ Editar o arquivo de configuração do SSH
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+# Procure pela linha:
+```bash
+#Banner none
+```
+# Altere para:
+```bash
+Banner /etc/issue.net
+```
+# Salve (CTRL + X, depois Y e ENTER).
+
+
+## 2️⃣ Criar o arquivo de banner com ASCII Art
+Agora, edite o arquivo /etc/issue.net com um ASCII Art 
+```bash
+sudo nano /etc/issue.net
+```
+Adicione sua arte, por exemplo, uma nuvem:
+        .--.      
+     .-(    ).   
+    (___.__)__)  
+     ‘ ‘ ‘ ‘ ‘  
+     ‘ ‘ ‘ ‘ ‘  
+
+
+## 3️⃣ Reiniciar o SSH
+Agora, edite o arquivo /etc/issue.net com um ASCII Art 
+```bash
+sudo nano /etc/issue.net
+```
+
+# agora saia e entre no SSH para testar
+
+
+
