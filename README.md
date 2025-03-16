@@ -342,11 +342,13 @@ Agora, edite o arquivo /etc/issue.net com um ASCII Art
 sudo nano /etc/issue.net
 ```
 Adicione sua arte, por exemplo, uma nuvem:
+```
     .--.      
  .-(    ).   
 (___.__)__)  
  ‘ ‘ ‘ ‘ ‘  
  ‘ ‘ ‘ ‘ ‘  
+```
 
 ## 3️⃣ Reiniciar o SSH
 Agora, edite o arquivo /etc/issue.net com um ASCII Art 
