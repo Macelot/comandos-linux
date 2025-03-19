@@ -15,9 +15,10 @@ OBS este comando precisa de permissão, ou seja, precisa pertencer ao grupo root
 ```bash
 ls -l /sbin/shutdown /sbin/reboot
 ```
+```
 lrwxrwxrwx 1 root root 14 Aug 25  2024 /sbin/reboot -> /bin/systemctl
 lrwxrwxrwx 1 root root 14 Aug 25  2024 /sbin/shutdown -> /bin/systemctl
-
+```
 
 ## Instalar o SSH
 ```bash
