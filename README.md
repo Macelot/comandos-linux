@@ -1,55 +1,5 @@
 # Comandos Essenciais do Linux Debian
 
-
-### Comando para verificar a versão do Debian:
-```bash
-cat /etc/os-release
-```
-
-### Comando para reiniciar o Debian:
-```bash
-systemctl reboot
-```
-
-OBS este comando precisa de permissão, ou seja, precisa pertencer ao grupo root:
-```bash
-ls -l /sbin/shutdown /sbin/reboot
-```
-```
-lrwxrwxrwx 1 root root 14 Aug 25  2024 /sbin/reboot -> /bin/systemctl
-lrwxrwxrwx 1 root root 14 Aug 25  2024 /sbin/shutdown -> /bin/systemctl
-```
-
-## Instalar o SSH
-```bash
-su root
-apt-get install openssh-server -y
-```
-
-## Verificar o status do SSH
-```bash
-systemctl status ssh
-```
-
-## reinicair o SSH
-```bash
-systemctl restart ssh
-```
-
-## Testar ssh local
-```bash
-ssh giovane@localhost 
-```
-
-## Depois de testado o SSH na VM, podemos configurar o redirecionamento de portas no Oracle VirtualBox
-no cmd do windows ou terminal do hospedeiro 
-```bash
-ssh giovane@127.0.0.1 -p 22333 
-```
-
-Passo a passo para redirecionamento de portas [Passo a Passo VM] (https://github.com/Macelot/passo-a-passo-vm)
-
-
 ## Listagem e Identificação de Shells
 
 ### Como listar os shells disponíveis no sistema?
@@ -237,8 +187,18 @@ kill -9 1234
 ### Reiniciar o sistema
 ```bash
 sudo reboot
+ou
+systemctl reboot
 ```
 OBS. Alguns comandos não são possíveis de executar na VPS com os usuários dos alunos, pois estes usuários não fazem parte do grupo root.
+OBS2. Este comando precisa de permissão, ou seja, precisa pertencer ao grupo root:
+```bash
+ls -l /sbin/shutdown /sbin/reboot
+```
+```
+lrwxrwxrwx 1 root root 14 Aug 25  2024 /sbin/reboot -> /bin/systemctl
+lrwxrwxrwx 1 root root 14 Aug 25  2024 /sbin/shutdown -> /bin/systemctl
+```
 
 ### Desligar o sistema
 ```bash
@@ -362,6 +322,34 @@ O `chmod` é uma ferramenta poderosa para gerenciar permissões de arquivos e di
 
 
 
+
+## Instalar o SSH
+```bash
+su root
+apt-get install openssh-server -y
+```
+
+## Verificar o status do SSH
+```bash
+systemctl status ssh
+```
+
+## reinicair o SSH
+```bash
+systemctl restart ssh
+```
+
+## Testar ssh local
+```bash
+ssh giovane@localhost 
+```
+
+## Depois de testado o SSH na VM, podemos configurar o redirecionamento de portas no Oracle VirtualBox
+no cmd do windows ou terminal do hospedeiro 
+```bash
+ssh giovane@127.0.0.1 -p 22333 
+```
+
 ### Comando para verificar a data de criação da VM:
 ```bash
 stat / | grep Birth
@@ -392,13 +380,11 @@ Agora, edite o arquivo /etc/issue.net com um ASCII Art
 sudo nano /etc/issue.net
 ```
 Adicione sua arte, por exemplo, uma nuvem:
-```
-    .--.      
- .-(    ).   
-(___.__)__)  
- ‘ ‘ ‘ ‘ ‘  
- ‘ ‘ ‘ ‘ ‘  
-```
+        .--.      
+     .-(    ).   
+    (___.__)__)  
+     ‘ ‘ ‘ ‘ ‘  
+     ‘ ‘ ‘ ‘ ‘  
 
 ## 3️⃣ Reiniciar o SSH
 Agora, edite o arquivo /etc/issue.net com um ASCII Art 
@@ -407,6 +393,11 @@ sudo nano /etc/issue.net
 ```
 
 # agora saia e entre no SSH para testar
+```bash
+exit
+```
+
+Passo a passo para redirecionamento de portas [Passo a Passo VM] (https://github.com/Macelot/passo-a-passo-vm)
 
 
 
