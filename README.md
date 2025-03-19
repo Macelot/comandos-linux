@@ -1,5 +1,53 @@
 # Comandos Essenciais do Linux Debian
 
+
+### Comando para verificar a versão do Debian:
+```bash
+cat /etc/os-release
+```
+
+### Comando para reiniciar o Debian:
+```bash
+systemctl reboot
+```
+
+OBS este comando precisa de permissão, ou seja, precisa pertencer ao grupo root:
+```bash
+ls -l /sbin/shutdown /sbin/reboot
+```
+lrwxrwxrwx 1 root root 14 Aug 25  2024 /sbin/reboot -> /bin/systemctl
+lrwxrwxrwx 1 root root 14 Aug 25  2024 /sbin/shutdown -> /bin/systemctl
+
+
+## Instalar o SSH
+```bash
+su root
+apt-get install openssh-server -y
+```
+
+## Verificar o status do SSH
+```bash
+systemctl status ssh
+```
+
+## reinicair o SSH
+```bash
+systemctl restart ssh
+```
+
+## Testar ssh local
+```bash
+ssh giovane@localhost 
+```
+
+## Depois de testado o SSH na VM, podemos configurar o redirecionamento de portas no Oracle VirtualBox
+no cmd do windows ou terminal do hospedeiro 
+```bash
+ssh giovane@127.0.0.1 -p 22333 
+```
+
+
+
 ## Listagem e Identificação de Shells
 
 ### Como listar os shells disponíveis no sistema?
