@@ -47,7 +47,7 @@ no cmd do windows ou terminal do hospedeiro
 ssh giovane@127.0.0.1 -p 22333 
 ```
 
-Passo a passo para redirecionamento de portas [https://github.com/Macelot/passo-a-passo-vm] (https://github.com/Macelot/passo-a-passo-vm)
+Passo a passo para redirecionamento de portas [Passo a Passo VM] (https://github.com/Macelot/passo-a-passo-vm)
 
 
 ## Listagem e Identificação de Shells
