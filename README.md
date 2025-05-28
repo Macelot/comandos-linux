@@ -308,6 +308,12 @@ chmod o=r arquivo.txt
 - `g-w`: Remove permissão de escrita para o grupo.
 - `o=r`: Define permissão de leitura para outros, removendo todas as outras permissões.
 
+
+####  Alterar dono do arquivo:
+```bash
+chown -R alunos1:users /var/www/html/aluno1
+```
+
 #### Consultar versão do SO Debian
 
 ```bash
