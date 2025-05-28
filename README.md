@@ -401,5 +401,7 @@ exit
 
 Passo a passo para redirecionamento de portas [Passo a Passo VM] (https://github.com/Macelot/passo-a-passo-vm)
 
-
-
+Gerenciamento Linux Debian [Gerenciamento Linux] (https://github.com/Macelot/pratica-gerenciamento-linux)
+Conceitos básico do Docker [Conceitos Docker] (https://github.com/Macelot/conceitos-docker)
+Manual do Docker [Manual Docker] (https://github.com/Macelot/manual-docker)
+Como logar no SSH sem senha [Root sem senha] (https://github.com/Macelot/root-sem-senha)
